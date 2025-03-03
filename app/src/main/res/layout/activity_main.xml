@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="108dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:onClick="btnSignOut"
+        android:text="Sign Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="261dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="User Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="₹0.00"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtTxtAmount"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtAmount"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtAmount" />
+
+    <EditText
+        android:id="@+id/edtTxtExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Expense"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btnSave"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtExpense"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtExpense"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtExpense" />
+
+    <Button
+        android:id="@+id/btnViewExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btnViewExpenses"
+        android:text="View Expenses"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
+
+    <Button
+        android:id="@+id/btnViewBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btnViewBudget"
+        android:text="View Budget"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewExpenses"
+        app:layout_constraintStart_toStartOf="@+id/btnViewExpenses"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewExpenses" />
+
+    <EditText
+        android:id="@+id/edtTxtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/edtTxtExpense"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtExpense"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtExpense" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

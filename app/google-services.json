@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470605992394",
+    "project_id": "paisa-controller-84473",
+    "storage_bucket": "paisa-controller-84473.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470605992394:android:da38a185f9767196847f33",
+        "android_client_info": {
+          "package_name": "com.example.paisacontroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470605992394-sbo0kc8k0utcpcfj3173c58dlelea990.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdhdf4emlY2e-OTP-BmwjTXo2Chq7U4Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470605992394-sbo0kc8k0utcpcfj3173c58dlelea990.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

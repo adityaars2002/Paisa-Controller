@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Budget">
+
+    <EditText
+        android:id="@+id/edtTxtSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Your Salary"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtTxtNecessity"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtNecessity"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtNecessity" />
+
+    <EditText
+        android:id="@+id/edtTxtNecessity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Necessities"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/edtTxtRepayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Debt Repayment"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtNecessity"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtNecessity"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtNecessity" />
+
+    <EditText
+        android:id="@+id/edtTxtInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Investments"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtRepayment"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtRepayment"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtRepayment" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="btnCalculate"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtInvestment"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtInvestment" />
+
+    <TextView
+        android:id="@+id/txtBudget"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Your Budget: ₹"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtTxtSalary"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtSalary"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtSalary" />
+</androidx.constraintlayout.widget.ConstraintLayout>
